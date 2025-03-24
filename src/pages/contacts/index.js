@@ -8,7 +8,7 @@ const Contacts = () => {
             <div className='flex items-center justify-between w-full'>
                 <h1 className='lg:text-3xl text-2xl font-medium text-black'>List of Contacts <span className='text-base text-[#6C6C6C]'>(8)</span></h1>
 
-                <PrimaryButton width="w-fit" label="+ Add New Project" />
+                <PrimaryButton width="w-fit" label="+ Add New Contact" />
             </div>
 
 

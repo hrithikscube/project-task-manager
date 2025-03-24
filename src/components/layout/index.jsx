@@ -35,9 +35,11 @@ const Layout = ({ children }) => {
 
         <div className='flex flex-col lg:gap-6 gap-4 w-full'>
           {
-            menu_items?.map(item => (
-              <Link href={item?.link} className='w-full'>{item?.name}</Link>
-            ))
+            React.Children.toArray(
+              menu_items?.map(item => (
+                <Link href={item?.link} className='w-full'>{item?.name}</Link>
+              ))
+            )
           }
 
         </div>
