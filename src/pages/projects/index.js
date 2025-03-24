@@ -16,7 +16,7 @@ const Projects = () => {
             </div>
 
 
-            <div className='grid grid-cols-3 lg:gap-5 gap-4'>
+            <div className='grid grid-cols-2 lg:gap-5 gap-4'>
 
                 {
                     React.Children.toArray(
@@ -31,21 +31,51 @@ const Projects = () => {
                                     <p className='text-sm text-black h-16 overflow-y-auto'>Voluptate pariatur laboris veniam voluptate veniam ad officia amet sunt ad.</p>
                                 </div>
 
-                                <div className=''>
+                                <div className='grid grid-cols-2'>
+
                                     <div className='flex items-center gap-2'>
 
-                                        <p className='text-sm font-medium text-black'>Date added:</p>
+                                        <p className='text-sm font-medium text-black'>All Tasks:</p>
+                                        <p className='text-sm text-black'>20</p>
+
+                                    </div>
+
+                                    <div className='flex items-center gap-2'>
+
+                                        <p className='text-sm font-medium text-black'>Deadline:</p>
                                         <p className='text-sm text-black'>24/3/2025</p>
 
                                     </div>
 
                                     <div className='flex items-center gap-2'>
 
-                                        <p className='text-sm font-medium text-black'>DeadLine:</p>
+                                        <p className='text-sm font-medium text-black'>Frozen:</p>
+                                        <p className='text-sm text-black'>3</p>
+
+                                    </div>
+
+                                    <div className='flex items-center gap-2'>
+
+                                        <p className='text-sm font-medium text-black'>Created on:</p>
                                         <p className='text-sm text-black'>24/3/2025</p>
 
                                     </div>
+
+                                    <div className='flex items-center gap-2'>
+
+                                        <p className='text-sm font-medium text-black'>Closed:</p>
+                                        <p className='text-sm text-black'>5</p>
+
+                                    </div>
+
+
+
+
+
+
                                 </div>
+
+
 
                             </div>
                         ))

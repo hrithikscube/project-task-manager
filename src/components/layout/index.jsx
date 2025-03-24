@@ -9,6 +9,10 @@ const menu_items = [
     link: '/'
   },
   {
+    name: 'Clients',
+    link: '/clients'
+  },
+  {
     name: 'Projects',
     link: '/projects'
   },
