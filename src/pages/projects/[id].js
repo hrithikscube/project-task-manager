@@ -87,33 +87,35 @@ const ViewProject = () => {
 
                     <div className='h-88 flex flex-col overflow-y-auto lg:gap-4 gap-2'>
                         {
-                            [...Array(10)]?.map((item, index) => (
-                                <div className='bg-[#E0E4EA] flex flex-col flex-shrink-0 rounded-xl p-4 gap-2'>
+                            React.Children.toArray(
+                                [...Array(10)]?.map((item, index) => (
+                                    <div className='bg-[#E0E4EA] flex flex-col flex-shrink-0 rounded-xl p-4 gap-2'>
 
-
-                                    <div className='flex items-center gap-2'>
-                                        <p className='text-base font-medium text-[#121212]'>Some Task {index + 1}:</p>
-
-                                        <Chip label="High" />
-                                    </div>
-
-                                    <div>
-                                        <div className='flex items-center gap-2'>
-
-                                            <p className='text-sm font-medium text-[#6C6C6C]'>Participant:</p>
-                                            <p className='text-sm text-[#121212]'>John</p>
-
-                                        </div>
 
                                         <div className='flex items-center gap-2'>
+                                            <p className='text-base font-medium text-[#121212]'>Some Task {index + 1}:</p>
 
-                                            <p className='text-sm font-medium text-[#6C6C6C]'>Date added:</p>
-                                            <p className='text-sm text-[#121212]'>24/3/2025</p>
+                                            <Chip label="High" />
+                                        </div>
 
+                                        <div>
+                                            <div className='flex items-center gap-2'>
+
+                                                <p className='text-sm font-medium text-[#6C6C6C]'>Participant:</p>
+                                                <p className='text-sm text-[#121212]'>John</p>
+
+                                            </div>
+
+                                            <div className='flex items-center gap-2'>
+
+                                                <p className='text-sm font-medium text-[#6C6C6C]'>Date added:</p>
+                                                <p className='text-sm text-[#121212]'>24/3/2025</p>
+
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            ))
+                                ))
+                            )
                         }
                     </div>
 
@@ -129,33 +131,35 @@ const ViewProject = () => {
 
                     <div className='h-88 flex flex-col overflow-y-auto lg:gap-4 gap-2'>
                         {
-                            [...Array(2)].map((item, index) => (
-                                <div className='bg-[#E0E4EA] flex flex-col flex-shrink-0 rounded-xl p-4 gap-2'>
+                            React.Children.toArray(
+                                [...Array(2)].map((item, index) => (
+                                    <div className='bg-[#E0E4EA] flex flex-col flex-shrink-0 rounded-xl p-4 gap-2'>
 
-
-                                    <div className='flex items-center gap-2'>
-                                        <p className='text-base font-medium text-[#121212]'>Some Task {index + 1}:</p>
-
-                                        <Chip label="Medium" />
-                                    </div>
-
-                                    <div>
-                                        <div className='flex items-center gap-2'>
-
-                                            <p className='text-sm font-medium text-[#6C6C6C]'>Participant:</p>
-                                            <p className='text-sm text-[#121212]'>John</p>
-
-                                        </div>
 
                                         <div className='flex items-center gap-2'>
+                                            <p className='text-base font-medium text-[#121212]'>Some Task {index + 1}:</p>
 
-                                            <p className='text-sm font-medium text-[#6C6C6C]'>Date added:</p>
-                                            <p className='text-sm text-[#121212]'>24/3/2025</p>
+                                            <Chip label="Medium" />
+                                        </div>
 
+                                        <div>
+                                            <div className='flex items-center gap-2'>
+
+                                                <p className='text-sm font-medium text-[#6C6C6C]'>Participant:</p>
+                                                <p className='text-sm text-[#121212]'>John</p>
+
+                                            </div>
+
+                                            <div className='flex items-center gap-2'>
+
+                                                <p className='text-sm font-medium text-[#6C6C6C]'>Date added:</p>
+                                                <p className='text-sm text-[#121212]'>24/3/2025</p>
+
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            ))
+                                ))
+                            )
                         }
                     </div>
 
@@ -170,35 +174,33 @@ const ViewProject = () => {
                     </div>
 
                     <div className='h-88 flex flex-col overflow-y-auto lg:gap-4 gap-2'>
-                        {
-                            [...Array(1)].map((item, index) => (
-                                <div className='bg-[#E0E4EA] flex flex-col flex-shrink-0 rounded-xl p-4 gap-2'>
+
+                        <div className='bg-[#E0E4EA] flex flex-col flex-shrink-0 rounded-xl p-4 gap-2'>
 
 
-                                    <div className='flex items-center gap-2'>
-                                        <p className='text-base font-medium text-[#121212]'>Some Task {index + 1}:</p>
+                            <div className='flex items-center gap-2'>
+                                <p className='text-base font-medium text-[#121212]'>Some Task 1:</p>
 
-                                        <Chip label="Medium" />
-                                    </div>
+                                <Chip label="Medium" />
+                            </div>
 
-                                    <div>
-                                        <div className='flex items-center gap-2'>
+                            <div>
+                                <div className='flex items-center gap-2'>
 
-                                            <p className='text-sm font-medium text-[#6C6C6C]'>Participant:</p>
-                                            <p className='text-sm text-[#121212]'>John</p>
+                                    <p className='text-sm font-medium text-[#6C6C6C]'>Participant:</p>
+                                    <p className='text-sm text-[#121212]'>John</p>
 
-                                        </div>
-
-                                        <div className='flex items-center gap-2'>
-
-                                            <p className='text-sm font-medium text-[#6C6C6C]'>Date added:</p>
-                                            <p className='text-sm text-[#121212]'>24/3/2025</p>
-
-                                        </div>
-                                    </div>
                                 </div>
-                            ))
-                        }
+
+                                <div className='flex items-center gap-2'>
+
+                                    <p className='text-sm font-medium text-[#6C6C6C]'>Date added:</p>
+                                    <p className='text-sm text-[#121212]'>24/3/2025</p>
+
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
@@ -212,35 +214,31 @@ const ViewProject = () => {
                     </div>
 
                     <div className='h-88 flex flex-col overflow-y-auto lg:gap-4 gap-2'>
-                        {
-                            [...Array(1)].map((item, index) => (
-                                <div className='bg-[#E0E4EA] flex flex-col flex-shrink-0 rounded-xl p-4 gap-2'>
+                        <div className='bg-[#E0E4EA] flex flex-col flex-shrink-0 rounded-xl p-4 gap-2'>
 
 
-                                    <div className='flex items-center gap-2'>
-                                        <p className='text-base font-medium text-[#121212]'>Some Task {index + 1}:</p>
+                            <div className='flex items-center gap-2'>
+                                <p className='text-base font-medium text-[#121212]'>Some Task 1:</p>
 
-                                        <Chip label="Low" />
-                                    </div>
+                                <Chip label="Low" />
+                            </div>
 
-                                    <div>
-                                        <div className='flex items-center gap-2'>
+                            <div>
+                                <div className='flex items-center gap-2'>
 
-                                            <p className='text-sm font-medium text-[#6C6C6C]'>Participant:</p>
-                                            <p className='text-sm text-[#121212]'>John</p>
+                                    <p className='text-sm font-medium text-[#6C6C6C]'>Participant:</p>
+                                    <p className='text-sm text-[#121212]'>John</p>
 
-                                        </div>
-
-                                        <div className='flex items-center gap-2'>
-
-                                            <p className='text-sm font-medium text-[#6C6C6C]'>Date added:</p>
-                                            <p className='text-sm text-[#121212]'>24/3/2025</p>
-
-                                        </div>
-                                    </div>
                                 </div>
-                            ))
-                        }
+
+                                <div className='flex items-center gap-2'>
+
+                                    <p className='text-sm font-medium text-[#6C6C6C]'>Date added:</p>
+                                    <p className='text-sm text-[#121212]'>24/3/2025</p>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -252,3 +250,12 @@ const ViewProject = () => {
 }
 
 export default ViewProject
+
+
+export async function getServerSideProps() {
+    return {
+        props: {
+            data: {}
+        }
+    }
+}
